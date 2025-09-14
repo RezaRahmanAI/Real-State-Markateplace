@@ -1,0 +1,29 @@
+2025-09-04 07:53:54.767 +06:00 [Warning] (.) Application starting...
+2025-09-04 07:53:54.933 +06:00 [Warning] (.) Log path: D:\OCT\Source\remwebsite\trunk\Real_Estate.server.api\logs\log-20250904.log
+2025-09-04 07:54:02.255 +06:00 [Warning] (Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.) The WebRootPath was not found: "D:\OCT\Source\remwebsite\trunk\Real_Estate.server.api\wwwroot". Static files may be unavailable.
+2025-09-04 08:11:54.938 +06:00 [Error] (Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.) An unhandled exception has occurred while executing the request.
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'D:\OCT\Source\remwebsite\trunk\Real_Estate.server.api\assets\images\04092025021117520564.jpg'.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at Real_Estate.server.api.Controllers.TestimonialController.Create(TestimonialModel model) in D:\OCT\Source\remwebsite\trunk\Real_Estate.server.api\Controllers\TestimonialController.cs:line 46
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-09-04 08:12:56.755 +06:00 [Warning] (.) Application starting...
+2025-09-04 08:12:56.772 +06:00 [Warning] (.) Log path: D:\OCT\Source\remwebsite\trunk\Real_Estate.server.api\logs\log-20250904.log
+2025-09-04 08:12:58.829 +06:00 [Warning] (Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.) The WebRootPath was not found: "D:\OCT\Source\remwebsite\trunk\Real_Estate.server.api\wwwroot". Static files may be unavailable.
+2025-09-04 08:21:30.409 +06:00 [Warning] (.) Application starting...
+2025-09-04 08:21:30.421 +06:00 [Warning] (.) Log path: D:\OCT\Source\remwebsite\trunk\Real_Estate.server.api\logs\log-20250904.log
+2025-09-04 08:21:33.401 +06:00 [Warning] (Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.) The WebRootPath was not found: "D:\OCT\Source\remwebsite\trunk\Real_Estate.server.api\wwwroot". Static files may be unavailable.

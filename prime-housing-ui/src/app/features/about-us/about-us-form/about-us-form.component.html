@@ -1,0 +1,190 @@
+<div
+  class="fixed inset-0 z-50 flex justify-center items-center bg-black bg-opacity-60 transition-opacity duration-300 fade-up animate"
+  role="dialog"
+  aria-modal="true"
+>
+  <div
+    class="relative w-full max-w-2xl bg-white rounded-xl shadow-2xl p-5 sm:p-6 transform transition-all duration-300 scale-100"
+  >
+    <!-- Header -->
+    <div class="flex justify-between items-center mb-5">
+      <h3 class="text-lg font-bold text-dark">
+        {{ mode === 'create' ? 'Add About Us' : 'Edit About Us' }}
+      </h3>
+      <button
+        type="button"
+        (click)="closeModal()"
+        class="text-lightDark hover:text-dark hover:bg-light rounded-full p-2 transition-colors duration-200"
+      >
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+        <span class="sr-only">Close modal</span>
+      </button>
+    </div>
+
+    <!-- Form -->
+    <form (ngSubmit)="saveAboutUs()" enctype="multipart/form-data" class="space-y-5">
+      <div class="grid gap-4 sm:grid-cols-2">
+
+        <!-- History -->
+        <div class="sm:col-span-2">
+          <label for="history" class="block mb-1.5 text-sm font-medium text-dark">
+            <i class="fas fa-book mr-1.5"></i>History
+          </label>
+          <textarea
+            id="history"
+            [(ngModel)]="_aboutUs.history"
+            name="history"
+            rows="1"
+            class="w-full p-3 bg-light border border-lightDark rounded-lg text-dark focus:ring-2 focus:ring-accent focus:border-accent transition-colors duration-200 text-sm"
+            placeholder="Write company history here"
+            required
+          ></textarea>
+        </div>
+
+        <!-- Vision -->
+        <div class="sm:col-span-2">
+          <label for="vision" class="block mb-1.5 text-sm font-medium text-dark">
+            <i class="fas fa-eye mr-1.5"></i>Vision
+          </label>
+          <textarea
+            id="vision"
+            [(ngModel)]="_aboutUs.vision"
+            name="vision"
+            rows="1"
+            class="w-full p-3 bg-light border border-lightDark rounded-lg text-dark focus:ring-2 focus:ring-accent focus:border-accent transition-colors duration-200 text-sm"
+            placeholder="Write company vision here"
+            required
+          ></textarea>
+          <input *ngIf="mode === 'edit'" id="id" [(ngModel)]="_aboutUs.id" name="id" type="hidden" />
+        </div>
+
+        <!-- Mission -->
+        <div class="sm:col-span-2">
+          <label for="mission" class="block mb-1.5 text-sm font-medium text-dark">
+            <i class="fas fa-bullseye mr-1.5"></i>Mission
+          </label>
+          <textarea
+            id="mission"
+            [(ngModel)]="_aboutUs.mission"
+            name="mission"
+            rows="1"
+            class="w-full p-3 bg-light border border-lightDark rounded-lg text-dark focus:ring-2 focus:ring-accent focus:border-accent transition-colors duration-200 text-sm"
+            placeholder="Write company mission here"
+            required
+          ></textarea>
+        </div>
+
+        <!-- Owner Name -->
+        <div class="sm:col-span-1">
+          <label for="ownerName" class="block mb-1.5 text-sm font-medium text-dark">
+            <i class="fas fa-user mr-1.5"></i>Owner Name
+          </label>
+          <input
+            id="ownerName"
+            [(ngModel)]="_aboutUs.ownerName"
+            name="ownerName"
+            type="text"
+            class="w-full p-3 bg-light border border-lightDark rounded-lg text-dark focus:ring-2 focus:ring-accent focus:border-accent transition-colors duration-200 text-sm"
+            placeholder="Enter owner name"
+            required
+          />
+        </div>
+
+        <!-- Owner Designation -->
+        <div class="sm:col-span-1">
+          <label for="ownerDesignation" class="block mb-1.5 text-sm font-medium text-dark">
+            <i class="fas fa-briefcase mr-1.5"></i>Owner Designation
+          </label>
+          <input
+            id="ownerDesignation"
+            [(ngModel)]="_aboutUs.ownerDesignation"
+            name="ownerDesignation"
+            type="text"
+            class="w-full p-3 bg-light border border-lightDark rounded-lg text-dark focus:ring-2 focus:ring-accent focus:border-accent transition-colors duration-200 text-sm"
+            placeholder="Enter owner designation"
+            required
+          />
+        </div>
+
+        <!-- Owner Speech -->
+        <div class="sm:col-span-2">
+          <label for="ownerSpeech" class="block mb-1.5 text-sm font-medium text-dark">
+            <i class="fas fa-comment-alt mr-1.5"></i>Owner Speech
+          </label>
+          <textarea
+            id="ownerSpeech"
+            [(ngModel)]="_aboutUs.ownerSpeech"
+            name="ownerSpeech"
+            rows="2"
+            class="w-full p-3 bg-light border border-lightDark rounded-lg text-dark focus:ring-2 focus:ring-accent focus:border-accent transition-colors duration-200 text-sm"
+            placeholder="Write owner speech here"
+            required
+          ></textarea>
+        </div>
+
+        <!-- Images -->
+        <div>
+          <label for="image" class="block mb-1.5 text-sm font-medium text-dark">
+            <i class="fas fa-image mr-1.5"></i>Owner Image
+          </label>
+          <input
+            id="image"
+            name="image"
+            type="file"
+            (change)="onOwnerImageChange($event)"
+            class="w-full p-2.5 bg-light border border-lightDark rounded-lg text-dark file:mr-3 file:py-1.5 file:px-3 file:rounded-md file:border-0 file:bg-accent/20 file:text-accent hover:file:bg-accent/30 transition-colors duration-200 text-sm"
+          />
+        </div>
+
+        <div>
+          <label for="visionImage" class="block mb-1.5 text-sm font-medium text-dark">
+            <i class="fas fa-image mr-1.5"></i>Vision Image
+          </label>
+          <input
+            id="visionImage"
+            name="visionImage"
+            type="file"
+            (change)="onVisionImageChange($event)"
+            class="w-full p-2.5 bg-light border border-lightDark rounded-lg text-dark file:mr-3 file:py-1.5 file:px-3 file:rounded-md file:border-0 file:bg-accent/20 file:text-accent hover:file:bg-accent/30 transition-colors duration-200 text-sm"
+          />
+        </div>
+
+        <div>
+          <label for="missionImage" class="block mb-1.5 text-sm font-medium text-dark">
+            <i class="fas fa-image mr-1.5"></i>Mission Image
+          </label>
+          <input
+            id="missionImage"
+            name="missionImage"
+            type="file"
+            (change)="onMissionImageChange($event)"
+            class="w-full p-2.5 bg-light border border-lightDark rounded-lg text-dark file:mr-3 file:py-1.5 file:px-3 file:rounded-md file:border-0 file:bg-accent/20 file:text-accent hover:file:bg-accent/30 transition-colors duration-200 text-sm"
+          />
+        </div>
+
+        
+        <!-- Submit Button -->
+      <div class=" mt-10 justify-center">
+        <button
+          type="submit"
+          class="relative inline-flex items-center px-5 py-2.5 text-sm font-medium text-white bg-accent rounded-lg overflow-hidden group transition-all duration-300"
+        >
+          <span class="relative z-10 flex items-center">
+            <svg class="mr-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            {{ mode === 'create' ? 'Save' : 'Update' }}
+          </span>
+          <span class="absolute inset-0 bg-dark transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
+        </button>
+      </div>
+
+      </div>
+
+      
+
+    </form>
+  </div>
+</div>

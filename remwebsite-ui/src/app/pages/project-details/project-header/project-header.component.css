@@ -1,0 +1,27 @@
+/* project-details.component.css */
+.bg-img {
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover; /* Use 'cover' for all screen sizes */
+  background-position: center; /* This is the default position for both views */
+  position: relative;
+}
+
+@media (min-width: 768px) { /* md: viewport, which is what you used in your HTML */
+  .bg-img {
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  position: relative;
+  }
+}
+
+.text-container {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 10;
+}
+
+

@@ -1,0 +1,6 @@
+2025-09-13 09:35:02.761 +06:00 [Warning] (.) Application starting...
+2025-09-13 09:35:02.775 +06:00 [Warning] (.) Log path: D:\OCT\Source\remwebsite\trunk\Real_Estate.server.api\logs\log-20250913.log
+2025-09-13 09:35:06.621 +06:00 [Warning] (Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.) The WebRootPath was not found: "D:\OCT\Source\remwebsite\trunk\Real_Estate.server.api\wwwroot". Static files may be unavailable.
+2025-09-13 10:50:23.408 +06:00 [Warning] (.) Application starting...
+2025-09-13 10:50:23.423 +06:00 [Warning] (.) Log path: D:\OCT\Source\remwebsite\trunk\Real_Estate.server.api\logs\log-20250913.log
+2025-09-13 10:50:28.717 +06:00 [Warning] (Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.) The WebRootPath was not found: "D:\OCT\Source\remwebsite\trunk\Real_Estate.server.api\wwwroot". Static files may be unavailable.

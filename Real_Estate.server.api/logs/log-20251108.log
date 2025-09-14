@@ -1,0 +1,251 @@
+2025-08-11 09:26:33.900 +06:00 [Warning] (.) Application starting........
+2025-08-11 09:26:33.909 +06:00 [Warning] (.) D:\OCT\Source\remwebsite\trunk\Real_Estate.server.api\logs\log-20251108.log
+2025-08-11 09:27:57.095 +06:00 [Warning] (.) Application starting........
+2025-08-11 09:27:57.108 +06:00 [Warning] (.) D:\OCT\Source\remwebsite\trunk\Real_Estate.server.api\logs\log-20251108.log
+2025-08-11 09:28:00.549 +06:00 [Error] (Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.) An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Response Content-Length mismatch: too many bytes written (202 of 152).
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.VerifyAndUpdateWrite(Int32 count)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.FirstWriteAsyncInternal(ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.WritePipeAsync(ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseStream.WriteAsync(ReadOnlyMemory`1 source, CancellationToken cancellationToken)
+   at System.IO.Compression.DeflateStream.CopyToStream.WriteAsyncCore(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.IO.Stream.<CopyToAsync>g__Core|27_0(Stream source, Stream destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at System.IO.Compression.DeflateStream.CopyToStream.CopyFromSourceToDestinationAsync()
+   at Swashbuckle.AspNetCore.EmbeddedResourceProvider.TryRespondWithFileAsync(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-08-11 09:28:00.550 +06:00 [Error] (Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.) An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Response Content-Length mismatch: too many bytes written (131072 of 23647).
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.VerifyAndUpdateWrite(Int32 count)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.FirstWriteAsyncInternal(ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.WritePipeAsync(ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseStream.WriteAsync(ReadOnlyMemory`1 source, CancellationToken cancellationToken)
+   at System.IO.Compression.DeflateStream.CopyToStream.WriteAsyncCore(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.IO.Stream.<CopyToAsync>g__Core|27_0(Stream source, Stream destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at System.IO.Compression.DeflateStream.CopyToStream.CopyFromSourceToDestinationAsync()
+   at Swashbuckle.AspNetCore.EmbeddedResourceProvider.TryRespondWithFileAsync(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-08-11 09:28:00.550 +06:00 [Error] (Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.) An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Response Content-Length mismatch: too many bytes written (131072 of 70860).
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.VerifyAndUpdateWrite(Int32 count)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.FirstWriteAsyncInternal(ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.WritePipeAsync(ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseStream.WriteAsync(ReadOnlyMemory`1 source, CancellationToken cancellationToken)
+   at System.IO.Compression.DeflateStream.CopyToStream.WriteAsyncCore(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.IO.Stream.<CopyToAsync>g__Core|27_0(Stream source, Stream destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at System.IO.Compression.DeflateStream.CopyToStream.CopyFromSourceToDestinationAsync()
+   at Swashbuckle.AspNetCore.EmbeddedResourceProvider.TryRespondWithFileAsync(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-08-11 09:28:00.579 +06:00 [Error] (Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.) An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Response Content-Length mismatch: too many bytes written (538003 of 417943).
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.VerifyAndUpdateWrite(Int32 count)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.WritePipeAsync(ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseStream.WriteAsync(ReadOnlyMemory`1 source, CancellationToken cancellationToken)
+   at System.IO.Compression.DeflateStream.CopyToStream.WriteAsyncCore(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.IO.Stream.<CopyToAsync>g__Core|27_0(Stream source, Stream destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at System.IO.Compression.DeflateStream.CopyToStream.CopyFromSourceToDestinationAsync()
+   at Swashbuckle.AspNetCore.EmbeddedResourceProvider.TryRespondWithFileAsync(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-08-11 09:28:00.611 +06:00 [Warning] (Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.) The response has already started, the error page middleware will not be executed.
+2025-08-11 09:28:34.105 +06:00 [Error] (Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.) An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Response Content-Length mismatch: too many bytes written (202 of 152).
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.VerifyAndUpdateWrite(Int32 count)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.FirstWriteAsyncInternal(ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.WritePipeAsync(ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseStream.WriteAsync(ReadOnlyMemory`1 source, CancellationToken cancellationToken)
+   at System.IO.Compression.DeflateStream.CopyToStream.WriteAsyncCore(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.IO.Stream.<CopyToAsync>g__Core|27_0(Stream source, Stream destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at System.IO.Compression.DeflateStream.CopyToStream.CopyFromSourceToDestinationAsync()
+   at Swashbuckle.AspNetCore.EmbeddedResourceProvider.TryRespondWithFileAsync(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-08-11 09:28:34.106 +06:00 [Error] (Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.) An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Response Content-Length mismatch: too many bytes written (131072 of 23647).
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.VerifyAndUpdateWrite(Int32 count)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.FirstWriteAsyncInternal(ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.WritePipeAsync(ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseStream.WriteAsync(ReadOnlyMemory`1 source, CancellationToken cancellationToken)
+   at System.IO.Compression.DeflateStream.CopyToStream.WriteAsyncCore(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.IO.Stream.<CopyToAsync>g__Core|27_0(Stream source, Stream destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at System.IO.Compression.DeflateStream.CopyToStream.CopyFromSourceToDestinationAsync()
+   at Swashbuckle.AspNetCore.EmbeddedResourceProvider.TryRespondWithFileAsync(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-08-11 09:28:34.165 +06:00 [Error] (Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.) An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Response Content-Length mismatch: too many bytes written (131072 of 70860).
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.VerifyAndUpdateWrite(Int32 count)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.FirstWriteAsyncInternal(ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.WritePipeAsync(ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseStream.WriteAsync(ReadOnlyMemory`1 source, CancellationToken cancellationToken)
+   at System.IO.Compression.DeflateStream.CopyToStream.WriteAsyncCore(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.IO.Stream.<CopyToAsync>g__Core|27_0(Stream source, Stream destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at System.IO.Compression.DeflateStream.CopyToStream.CopyFromSourceToDestinationAsync()
+   at Swashbuckle.AspNetCore.EmbeddedResourceProvider.TryRespondWithFileAsync(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-08-11 09:28:34.176 +06:00 [Error] (Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.) An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Response Content-Length mismatch: too many bytes written (538003 of 417943).
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.VerifyAndUpdateWrite(Int32 count)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.WritePipeAsync(ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseStream.WriteAsync(ReadOnlyMemory`1 source, CancellationToken cancellationToken)
+   at System.IO.Compression.DeflateStream.CopyToStream.WriteAsyncCore(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.IO.Stream.<CopyToAsync>g__Core|27_0(Stream source, Stream destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at System.IO.Compression.DeflateStream.CopyToStream.CopyFromSourceToDestinationAsync()
+   at Swashbuckle.AspNetCore.EmbeddedResourceProvider.TryRespondWithFileAsync(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-08-11 09:28:34.177 +06:00 [Warning] (Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.) The response has already started, the error page middleware will not be executed.
+2025-08-11 09:35:58.581 +06:00 [Warning] (.) Application starting........
+2025-08-11 09:35:58.599 +06:00 [Warning] (.) D:\OCT\Source\remwebsite\trunk\Real_Estate.server.api\logs\log-20251108.log
+2025-08-11 09:36:01.924 +06:00 [Error] (Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.) An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Response Content-Length mismatch: too many bytes written (202 of 152).
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.VerifyAndUpdateWrite(Int32 count)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.FirstWriteAsyncInternal(ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.WritePipeAsync(ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseStream.WriteAsync(ReadOnlyMemory`1 source, CancellationToken cancellationToken)
+   at System.IO.Compression.DeflateStream.CopyToStream.WriteAsyncCore(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.IO.Stream.<CopyToAsync>g__Core|27_0(Stream source, Stream destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at System.IO.Compression.DeflateStream.CopyToStream.CopyFromSourceToDestinationAsync()
+   at Swashbuckle.AspNetCore.EmbeddedResourceProvider.TryRespondWithFileAsync(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|10_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-08-11 09:36:01.924 +06:00 [Error] (Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.) An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Response Content-Length mismatch: too many bytes written (131072 of 70860).
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.VerifyAndUpdateWrite(Int32 count)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.FirstWriteAsyncInternal(ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.WritePipeAsync(ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseStream.WriteAsync(ReadOnlyMemory`1 source, CancellationToken cancellationToken)
+   at System.IO.Compression.DeflateStream.CopyToStream.WriteAsyncCore(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.IO.Stream.<CopyToAsync>g__Core|27_0(Stream source, Stream destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at System.IO.Compression.DeflateStream.CopyToStream.CopyFromSourceToDestinationAsync()
+   at Swashbuckle.AspNetCore.EmbeddedResourceProvider.TryRespondWithFileAsync(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|10_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-08-11 09:36:01.924 +06:00 [Error] (Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.) An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Response Content-Length mismatch: too many bytes written (131072 of 23647).
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.VerifyAndUpdateWrite(Int32 count)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.FirstWriteAsyncInternal(ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.WritePipeAsync(ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseStream.WriteAsync(ReadOnlyMemory`1 source, CancellationToken cancellationToken)
+   at System.IO.Compression.DeflateStream.CopyToStream.WriteAsyncCore(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.IO.Stream.<CopyToAsync>g__Core|27_0(Stream source, Stream destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at System.IO.Compression.DeflateStream.CopyToStream.CopyFromSourceToDestinationAsync()
+   at Swashbuckle.AspNetCore.EmbeddedResourceProvider.TryRespondWithFileAsync(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-08-11 09:36:01.963 +06:00 [Error] (Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.) An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Response Content-Length mismatch: too many bytes written (538003 of 417943).
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.VerifyAndUpdateWrite(Int32 count)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.WritePipeAsync(ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseStream.WriteAsync(ReadOnlyMemory`1 source, CancellationToken cancellationToken)
+   at System.IO.Compression.DeflateStream.CopyToStream.WriteAsyncCore(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.IO.Stream.<CopyToAsync>g__Core|27_0(Stream source, Stream destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at System.IO.Compression.DeflateStream.CopyToStream.CopyFromSourceToDestinationAsync()
+   at Swashbuckle.AspNetCore.EmbeddedResourceProvider.TryRespondWithFileAsync(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|10_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-08-11 09:36:01.964 +06:00 [Warning] (Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.) The response has already started, the error page middleware will not be executed.
+2025-08-11 09:36:07.998 +06:00 [Error] (Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.) An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Response Content-Length mismatch: too many bytes written (131072 of 23647).
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.VerifyAndUpdateWrite(Int32 count)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.FirstWriteAsyncInternal(ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.WritePipeAsync(ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseStream.WriteAsync(ReadOnlyMemory`1 source, CancellationToken cancellationToken)
+   at System.IO.Compression.DeflateStream.CopyToStream.WriteAsyncCore(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.IO.Stream.<CopyToAsync>g__Core|27_0(Stream source, Stream destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at System.IO.Compression.DeflateStream.CopyToStream.CopyFromSourceToDestinationAsync()
+   at Swashbuckle.AspNetCore.EmbeddedResourceProvider.TryRespondWithFileAsync(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-08-11 09:36:08.011 +06:00 [Error] (Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.) An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Response Content-Length mismatch: too many bytes written (131072 of 70860).
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.VerifyAndUpdateWrite(Int32 count)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.FirstWriteAsyncInternal(ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.WritePipeAsync(ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseStream.WriteAsync(ReadOnlyMemory`1 source, CancellationToken cancellationToken)
+   at System.IO.Compression.DeflateStream.CopyToStream.WriteAsyncCore(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.IO.Stream.<CopyToAsync>g__Core|27_0(Stream source, Stream destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at System.IO.Compression.DeflateStream.CopyToStream.CopyFromSourceToDestinationAsync()
+   at Swashbuckle.AspNetCore.EmbeddedResourceProvider.TryRespondWithFileAsync(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-08-11 09:36:08.014 +06:00 [Error] (Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.) An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Response Content-Length mismatch: too many bytes written (202 of 152).
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.VerifyAndUpdateWrite(Int32 count)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.FirstWriteAsyncInternal(ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.WritePipeAsync(ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseStream.WriteAsync(ReadOnlyMemory`1 source, CancellationToken cancellationToken)
+   at System.IO.Compression.DeflateStream.CopyToStream.WriteAsyncCore(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.IO.Stream.<CopyToAsync>g__Core|27_0(Stream source, Stream destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at System.IO.Compression.DeflateStream.CopyToStream.CopyFromSourceToDestinationAsync()
+   at Swashbuckle.AspNetCore.EmbeddedResourceProvider.TryRespondWithFileAsync(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-08-11 09:36:08.024 +06:00 [Error] (Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.) An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Response Content-Length mismatch: too many bytes written (538003 of 417943).
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.VerifyAndUpdateWrite(Int32 count)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.WritePipeAsync(ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseStream.WriteAsync(ReadOnlyMemory`1 source, CancellationToken cancellationToken)
+   at System.IO.Compression.DeflateStream.CopyToStream.WriteAsyncCore(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.IO.Stream.<CopyToAsync>g__Core|27_0(Stream source, Stream destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at System.IO.Compression.DeflateStream.CopyToStream.CopyFromSourceToDestinationAsync()
+   at Swashbuckle.AspNetCore.EmbeddedResourceProvider.TryRespondWithFileAsync(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-08-11 09:36:08.026 +06:00 [Warning] (Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.) The response has already started, the error page middleware will not be executed.
+2025-08-11 09:49:53.741 +06:00 [Warning] (.) Application starting........
+2025-08-11 09:49:53.754 +06:00 [Warning] (.) D:\OCT\Source\remwebsite\trunk\Real_Estate.server.api\logs\log-20251108.log
+2025-08-11 09:49:56.811 +06:00 [Error] (Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.) An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - Real_Estate.server.api.Controllers.HomeController.Index (Real_Estate.server.api). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.PrepareGenerateOperation(IGrouping`2 group)
+   at System.Linq.Enumerable.IteratorSelectIterator`2.MoveNext()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-08-11 09:53:04.005 +06:00 [Warning] (.) Application starting........
+2025-08-11 09:53:04.020 +06:00 [Warning] (.) D:\OCT\Source\remwebsite\trunk\Real_Estate.server.api\logs\log-20251108.log
+2025-08-11 09:53:08.702 +06:00 [Error] (Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.) An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - Real_Estate.server.api.Controllers.HomeController.Index (Real_Estate.server.api). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.PrepareGenerateOperation(IGrouping`2 group)
+   at System.Linq.Enumerable.IteratorSelectIterator`2.MoveNext()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-08-11 10:15:13.379 +06:00 [Warning] (.) Application starting........
+2025-08-11 10:15:13.392 +06:00 [Warning] (.) D:\OCT\Source\remwebsite\trunk\Real_Estate.server.api\logs\log-20251108.log
+2025-08-11 10:29:23.815 +06:00 [Warning] (.) Application starting........
+2025-08-11 10:29:23.828 +06:00 [Warning] (.) D:\OCT\Source\remwebsite\trunk\Real_Estate.server.api\logs\log-20251108.log
+2025-08-11 15:48:12.163 +06:00 [Warning] (.) Application starting........
+2025-08-11 15:48:12.173 +06:00 [Warning] (.) D:\OCT\Source\remwebsite\trunk\Real_Estate.server.api\logs\log-20251108.log
+2025-08-11 17:01:15.728 +06:00 [Warning] (.) Application starting........
+2025-08-11 17:01:15.750 +06:00 [Warning] (.) D:\OCT\Source\remwebsite\trunk\Real_Estate.server.api\logs\log-20251108.log

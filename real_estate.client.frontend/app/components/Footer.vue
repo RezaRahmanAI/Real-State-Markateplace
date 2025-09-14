@@ -1,0 +1,99 @@
+<template>
+<footer class="">
+    <div class="footer_top bg-slate-800 sm:py-10 py-5">
+        <div class="sm:container sm:mx-auto">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+            <div class="col-span-1 p-5 md:border-x md:border-slate-500">
+                <h1 class="text-slate-100 text-xl font-semibold">
+                    Navigation
+                    <i class="ri-arrow-right-line ms-5"></i>
+                </h1>
+                <div class="mt-5">
+                    <ul>
+                        <li class="py-2 cursor-pointer hover:translate-x-2 duration-500"><NuxtLink to="/" class="text-slate-100">Home</NuxtLink></li>
+                        <li class="py-2 cursor-pointer hover:translate-x-2 duration-500"> <NuxtLink to="/About" class="text-slate-100">About Us</NuxtLink></li>
+                        <li class="py-2 cursor-pointer hover:translate-x-2 duration-500"> <NuxtLink to="/Projects" class="text-slate-100">Projects</NuxtLink></li>
+                        <li class="py-2 cursor-pointer hover:translate-x-2 duration-500"> <NuxtLink to="/Contact" class="text-slate-100">Contact Us</NuxtLink></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-span-1 p-5 md:border-e md:border-slate-500">
+                <h1 class="text-slate-100 text-xl font-semibold">
+                    Social Media
+                    <i class="ri-arrow-right-line ms-5"></i>
+                </h1>
+                <div class="mt-5">
+                    <ul>
+                        <li class="py-2 cursor-pointer hover:translate-x-2 duration-500">
+                            <a href="https://www.facebook.com/share/19SHqBnNcY/?mibextid=qi2Omg" class="text-slate-100" target="_blank">
+                                <i class="ri-facebook-circle-line me-2"></i>
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="py-2 cursor-pointer hover:translate-x-2 duration-500">
+                            <a href="https://www.instagram.com/triconproperties?igsh=MWF5ZWVrdWU3c2k4dw==" class="text-slate-100" target="_blank">
+                                <i class="ri-instagram-line me-2"></i>
+                                Instagram
+                            </a>
+                        </li>
+                        <li class="py-2 cursor-pointer hover:translate-x-2 duration-500">
+                            <a href="https://bd.linkedin.com/company/triconproperties" class="text-slate-100" target="_blank">
+                                <i class="ri-linkedin-box-fill me-2"></i>
+                                LinkedIn
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-span-1 p-5 md:border-s lg:border-s-0 md:border-e md:border-slate-500">
+                <h1 class="text-slate-100 text-xl font-semibold">
+                    Contact
+                    <i class="ri-arrow-right-line ms-5"></i>
+                </h1>
+                <div class="mt-5">
+                    <ul>
+                        <li class="py-2 flex items-center gap-3">
+                            <div><i class="ri-phone-line text-slate-100"></i></div>
+                            <div class="text-slate-100 cursor-pointer hover:translate-x-2 duration-500">01329-638961</div>
+                        </li>
+                        <li class="py-2 flex items-center gap-3">
+                            <div><i class="ri-smartphone-line text-slate-100"></i></div>
+                            <div class="text-slate-100 cursor-pointer hover:translate-x-2 duration-500">01739-703426</div>
+                        </li>
+                        <li class="py-2 flex lg:block xl:flex items-center gap-3">
+                            <div><i class="ri-mail-send-line text-slate-100"></i></div>
+                            <div class="text-slate-100 cursor-pointer hover:translate-x-2 duration-500 ">triconproperties21@gmail.com</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+           
+            <div class="col-span-1 p-5 md:border-e md:border-slate-500">
+                <h1 class="text-slate-100 text-xl font-semibold">
+                    Address
+                    <i class="ri-arrow-right-line ms-5"></i>
+                </h1>
+                <div class="mt-5 flex items-baseline gap-3">
+                    <p class="text-slate-100">
+                        <i class="ri-map-pin-line"></i>
+                    </p>
+                    <p class="w-52 text-slate-100">
+                        Alokar more, Rajshahi, Bangladesh.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="footer_bootom bg-white py-5">
+        <p class="text-center">
+            &copy;2025 All Right Reserved Real Estate Ltd.
+        </p>
+    </div>
+</footer>
+</template>
+<script setup>
+
+</script>
+<style scoped>
+</style>

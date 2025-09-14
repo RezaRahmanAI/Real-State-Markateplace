@@ -1,0 +1,282 @@
+
+/* Set body font size for large screens */
+@media only screen and (min-width: 2000px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+/* Base container and typography */
+.container {
+  width: 100%;
+  max-width: 2000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: clamp(1em, 5vw, 4.06em);
+}
+
+.container.is--slider {
+  padding: 0;
+}
+
+.section.is--slider {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 5em;
+}
+
+/* Utility classes */
+.overflow {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ------------------------------------------- */
+/* Slider Component Styling */
+/* ------------------------------------------- */
+
+.slider__wave,
+.trigger__circle {
+  pointer-events: none;
+}
+
+.slider__wave {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  z-index: 2;
+  margin-top: -0.6vw;
+}
+
+.slider__wave.is--bottom {
+  top: auto;
+  bottom: 0;
+  margin-bottom: -0.6vw;
+  transform: rotate(-180deg);
+}
+
+.slider__wave svg path {
+  pointer-events: auto;
+}
+
+
+.splide__track {
+  overflow: hidden !important;
+}
+
+.splide__arrow,
+.splide__pagination {
+  display: none !important;
+}
+
+.splide *:focus {
+  outline: none;
+}
+
+.splide__list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+
+.splide__slide {
+  cursor: pointer;
+  position: relative;
+  transform-style: preserve-3d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 33.333333336%;
+  height: 40vw;
+  min-height: 41.88em;
+  padding: 0 0.52em;
+}
+
+/* Image and Overlay */
+.slide__content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  transform-style: preserve-3d;
+}
+
+.splide__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+  backface-visibility: hidden;
+}
+
+.slide__overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateZ(10px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 10px;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+.slide__name {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.slide__address {
+  margin: 8px 0 0;
+  font-size: 1rem;
+  opacity: 0.9;
+  text-shadow: 0 1px 3px var(--lightDark);
+}
+
+
+.splide__slide:hover .splide__img {
+  transform: scale(1.05);
+}
+
+.splide__slide:hover .slide__overlay,
+.splide__slide.is-active .slide__overlay {
+  opacity: 1;
+}
+
+.splide__slide:not(.is-active) .slide__overlay {
+  opacity: 0.5;
+}
+
+/* Controls */
+.controls {
+  position: absolute;
+  left: 0;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  z-index: 4;
+  display: flex;
+  width: 13em;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.control {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  width: 3.33em;
+  height: 3.33em;
+  margin: 0 0.5em;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 50%;
+  transition: transform 200ms ease;
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.control:active {
+  transform: scale(0.9);
+}
+
+.control__arrow {
+  position: relative;
+  z-index: 2;
+  display: block;
+  width: 1.5em;
+  height: 1.3em;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}
+
+.control__arrow.is--flipped {
+  transform: rotate(-180deg);
+}
+
+.control__fill {
+  position: absolute;
+  left: auto;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  margin-top: -100%;
+  margin-right: -100%;
+  border-radius: 50%;
+  background-color: #0d0628;
+}
+
+/* ------------------------------------------- */
+/* Responsive Media Queries */
+/* ------------------------------------------- */
+
+@media screen and (max-width: 991px) {
+  .container {
+    padding: clamp(1em, 4vw, 3em);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: clamp(2.5em, 8vw, 7em);
+  }
+  .container {
+    padding: clamp(1em, 4vw, 4.9em);
+  }
+  .section.is--slider {
+    margin-bottom: 9.9em;
+  }
+  .controls {
+    margin-bottom: -3em;
+    font-size: 2em;
+  }
+  .splide__slide {
+    width: 100%;
+    min-height: 50vh;
+    padding: 0 5px;
+  }
+  .slide__name {
+    font-size: 1.1rem;
+  }
+  .slide__address {
+    font-size: 0.8rem;
+  }
+  .slide__overlay {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .controls {
+    margin-bottom: -47px;
+    font-size: 10px;
+  }
+}
